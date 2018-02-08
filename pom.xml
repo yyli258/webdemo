@@ -24,6 +24,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>1.4.0.RELEASE</spring-boot.version>
         <junit.verion>3.8.1</junit.verion>
     </properties>
 
@@ -66,6 +67,13 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <dependency>
                 <groupId>junit</groupId>
